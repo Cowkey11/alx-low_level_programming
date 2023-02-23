@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * Main - function assigns random number(n) and prints the 'last digit is n', including whether the number is zero, greater than five or less thansix and not zero.
+ * main - function assigns random number(n) and prints the 'last digit is n', including whether the number is zero, greater than five or less thansix and not zero.
+ * return: is always 0
  */
 int main(void)
 {
@@ -14,17 +15,17 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	x = n % 10;
 
-	if (a == 0)
+	if (x == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, a);
+		printf("Last digit of %d is %d and is 0\n", n, x);
 	}
-	else if (a < 6;a !== 0)
+	else if (x < 6; x !== 0)
 	{	
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, x);
 	}
-	else if (a > 5);
+	else if (x > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, a);
+		printf("Last digit of %d is %d and is greater than 5\n", n, x);
 	}
 
 	return 0;
