@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* main - this function assigns a random interger value to n and prints the number
+* main - function assigns a random interger value
 * return: is 0
 */
 int main(void)
