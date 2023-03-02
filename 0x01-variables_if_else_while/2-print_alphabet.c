@@ -4,7 +4,7 @@
  * main- prints the alphabet in lower case
  * return: always 0
  */
-int main (void)
+int main(void)
 {
 	char lc;
 
