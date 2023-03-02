@@ -4,7 +4,7 @@
 
 /**
 * main - function assigns a random interger value
-* return: is 0
+* return: 0
 */
 int main(void)
 {
