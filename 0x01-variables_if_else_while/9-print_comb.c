@@ -10,19 +10,22 @@ int main(void)
 {
 	int a = 0;
 
-	while (a < 10)
+	if (a < 10)
 	{
-		if (a <= 8)
+		while (a < 10)
 		{
 			putchar(48 + a);
-			putchar(',');
-			putchar(' ');
-			a++;
-		}
-		else
-		{
-			putchar(48 + a);
-			a++;
+			if (a < 9)
+			{
+				putchar(',');
+				putchar(' ');
+				a++;
+			}
+			else
+			{
+				putchar('\n');
+				a++;
+			}
 		}
 	}
 	return (0);
