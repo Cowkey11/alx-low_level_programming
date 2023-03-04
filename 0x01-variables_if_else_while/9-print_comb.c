@@ -12,12 +12,18 @@ int main(void)
 
 	while (a < 10)
 	{
-		putchar(48 + a);
-		putchar(',');
-		putchar(' ');
-		a++;
+		if (a <= 8)
+		{
+			putchar(48 + a);
+			putchar(',');
+			putchar(' ');
+			a++;
+		}
+		else
+		{
+			putchar(48 + a);
+			a++;
+		}
 	}
-
-	putchar('\n');
 	return (0);
 }
