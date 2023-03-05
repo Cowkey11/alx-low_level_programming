@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
-* main - function assigns a random interger value
+* main - Entry point
+*
 * return: 0
 */
 int main(void)
