@@ -17,15 +17,3 @@ int _strlen(char *s)
     }
     return (count);
 }
-
-int main(void)
-{
-    char *str;
-
-    int len;
-
-    str = "MY first strlen!";
-    len = _strlen(str);
-    printf("%d\n", len);
-    return (0);
-}
