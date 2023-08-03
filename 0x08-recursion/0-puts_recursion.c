@@ -4,14 +4,21 @@
  * _puts_recursion()-function prints a string
  * @*s: pointer to the string to print
  *
- * return: nothing
+ * return: void
  */
 
 void _puts_recursion(char *s)
 {
-        int n;
+        int index = 0;
 
-        for (n = 0; s[n] != '\0'; n++)
-                _putchar(s[n]);
-        _putchar('\n');
+        if (s[index] == '\0')
+        {
+                _putchar('\n');
+                return;
+        }
+        else
+        {
+                _putchar(s[index]);
+                _puts_recursion(s + 1);
+        }
 }
