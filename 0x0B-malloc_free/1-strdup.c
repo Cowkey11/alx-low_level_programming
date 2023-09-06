@@ -13,6 +13,9 @@ char *_strdup(char *str)
 	unsigned int size = 0;
 	unsigned int index;
 
+	if (str == NULL)
+		return(NULL);
+
 	for (index = 0; str[index] != '\0'; index++)
 	{
 		size = (size + 1);
@@ -25,7 +28,7 @@ char *_strdup(char *str)
 		ptr[index] = str[index];
 	}
 
-	if (ptr[0] == '\0')
+	if (ptr == NULL)
 	{
 		return(NULL);
 	}
