@@ -1,10 +1,10 @@
 #include "main.h"
 
 /*
- * _strdup()-function returns duplicate copy of a string.
+ * @_strdup()-function returns duplicate copy of a string.
  * @*str-the string to be duplicated.
  *
- * return - pointer to duplicate copy of string in newly allocated space in memory.
+ * return - pointer to duplicate copy of string.
  */
 
 char *_strdup(char *str)
@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	unsigned int index;
 
 	if (str == NULL)
-		return(NULL);
+		return (NULL);
 
 	for (index = 0; str[index] != '\0'; index++)
 	{
@@ -30,8 +30,8 @@ char *_strdup(char *str)
 
 	if (ptr == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	else
-		return(ptr);
+		return (ptr);
 }
